@@ -5,3 +5,24 @@ html {
 *, *::before, *::after {
   box-sizing: inherit;
 }
+
+html {
+  font-size: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: "Adobe Caslon";
+    line-height: 1.5;
+}
+
+.logo {
+  width: 200px;
+  height: 100px;
+  padding-left: 10px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style-type: none;
+}
