@@ -17,12 +17,52 @@ body {
 }
 
 .logo {
-  width: 200px;
-  height: 100px;
-  padding-left: 10px;
-  margin: 0 auto;
+  width: 100px;
+  height: 50px;
+  margin: 0;
 }
 
 ul {
   list-style-type: none;
+  text-decoration: none;
+}
+
+h1 {
+  font-family: "Classico URW";
+  font-weight: bold;
+}
+
+h2 {
+  font-family: "Classico URW"
+}
+
+nav ul {
+  display:flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-family: "Classico URW";
+}
+
+nav {
+  background-color: #CB9382;
+  position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+.large-banner {
+  height: 90vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.logo {
+  display: inline-block;
+  color: #f9f9f9;
+  font-size: 3rem;
+  margin-left: 1.125rem;
+  text-decoration: none;
+  max-width: 5
+  0px;
 }
