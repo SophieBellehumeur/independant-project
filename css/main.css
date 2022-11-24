@@ -36,11 +36,22 @@ h2 {
   font-family: "Classico URW"
 }
 
+.banner-ocean {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 nav ul {
   display:flex;
   justify-content: flex-end;
   align-items: center;
   font-family: "Classico URW";
+}
+nav a {
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 2em;
 }
 
 nav {
@@ -55,6 +66,7 @@ nav {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: #A7C8EA;
 }
 
 .logo {
