@@ -67,7 +67,7 @@ nav a {
   grid-template-rows: 1fr 2rem;
   width: 100%;
   height: 80vh;
-  background-color: #000;
+  background-color: #ffff;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -76,12 +76,13 @@ nav a {
   justify-content: center;
 }
 
-.banner img {
+.banner-image {
   grid-column: 1 / -1;
   grid-row: 1 / -1;
   display: flex;
   align-content: center;
 }
+
 
 h1 {
   font-weight: bold;
@@ -163,6 +164,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 0;
 }
 
 .bottom {
@@ -177,6 +179,10 @@ h1 {
   margin: 0;
   padding-top: 2em;
   padding-bottom: 2em;
+}
+
+.about-page img {
+  border-radius: 40px;
 }
 
 .products {
@@ -256,7 +262,6 @@ li span {
 .button {
   background-color: #F7C63C;
   border-radius: 20px;
-  margin: 10px 60px;
   text-align: center;
   padding: 1em 0;
 }
@@ -267,6 +272,18 @@ li span {
   grid-template-columns: 1fr 1fr;
 }
 
+.couple {
+  border-radius: 50%;
+}
+
+.faq img {
+  max-width: 40px;
+}
+
+.faq h3::after {
+  font-family: "Material Icons Outlined";
+  content: 'alternate_email';
+}
 
 footer {
   text-align: center;
@@ -278,4 +295,71 @@ footer {
 .wrapper {
   margin-left: 1em;
   margin-right: 1em;
+}
+
+@media only screen and (min-width: 38em) {
+}
+
+.about-flex {
+  display: flex;
+  align-items: center;
+}
+
+.about-flex img {
+  width: 250%;
+}
+
+.new-product-section {
+  display: flex;
+  align-items: center;
+}
+
+.new-product-section img {
+  width: 250%;
+  margin-right: 1em;
+}
+
+.key-ingredients {
+  display: flex;
+  align-items: center;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+}
+
+.accesories-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+}
+
+.owners-grid {
+  display: flex;
+  align-items: center;
+}
+
+.button {
+  margin: 20px 400px;
+}
+
+.faq ul {
+  margin: 20px 80px;
+}
+
+.badges {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  padding: .4em;
+  max-width: 2000px;
+}
+
+@media only screen and (min-width: 70em) {
+.question-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr
+  }
 }
