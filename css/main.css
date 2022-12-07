@@ -383,6 +383,10 @@ footer {
   padding: .4em;
   max-width: 2000px;
 }
+
+.key-ingredient p {
+  margin-right: .1em;
+}
 }
 
 @media only screen and (min-width: 70em) {
