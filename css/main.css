@@ -98,6 +98,7 @@ h1 {
   margin-left: 1.125rem;
   text-decoration: none;
   max-width: 200px;
+  align-content: center;
 }
 
 .nav {
@@ -107,7 +108,7 @@ h1 {
   width: 100%;
   display: flex;
   align-items: center;
-  height: 70px;
+  height: 100px;
   justify-content: space-between;
 }
 
@@ -263,13 +264,17 @@ li span {
   background-color: #F7C63C;
   border-radius: 20px;
   text-align: center;
-  padding: 1em 0;
+  padding: .3em 0;
+  margin: 1em 0;
 }
 
 .badges {
   display: grid;
   grid-template-rows: 1fr 1fr;
+  gap: .5em;
   grid-template-columns: 1fr 1fr;
+  min-width: 25%;
+  margin: 0 35%;
 }
 
 .couple {
@@ -280,9 +285,26 @@ li span {
   max-width: 40px;
 }
 
-.faq h3::after {
+.faq h2::after {
+  font-family: "Material Icons Outlined";
+  content: 'help';
+  margin-left: 1em;
+}
+
+.contact-info h2::after {
   font-family: "Material Icons Outlined";
   content: 'alternate_email';
+  margin-left: 1em;
+  align-items: center;
+}
+
+.logo-small {
+  min-width: 20%;
+}
+
+.contact-details{
+  display: flex;
+  justify-content: space-between;
 }
 
 footer {
@@ -298,7 +320,6 @@ footer {
 }
 
 @media only screen and (min-width: 38em) {
-}
 
 .about-flex {
   display: flex;
@@ -339,10 +360,16 @@ footer {
 .owners-grid {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+
+.couple {
+  min-width: 30%;
+  padding-right: 1em;
 }
 
 .button {
-  margin: 20px 400px;
+  min-width: 10px;
 }
 
 .faq ul {
@@ -356,10 +383,23 @@ footer {
   padding: .4em;
   max-width: 2000px;
 }
+}
 
 @media only screen and (min-width: 70em) {
+
 .question-grid {
     display: grid;
     grid-template-columns: 1fr 1fr
   }
+}
+
+.product-grid {
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1em;
+}
+
+.accesories-grid {
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1em;
+}
 }
