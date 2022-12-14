@@ -177,8 +177,24 @@ nav a:hover {
   padding-bottom: 2em;
 }
 
+.about-flex {
+  display: flex;
+  flex-direction: column;
+}
+
 .about-page img {
   border-radius: 40px;
+}
+
+.new-product-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.key-ingredients {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .products {
@@ -207,6 +223,11 @@ nav a:hover {
   padding: 2em;
 }
 
+.accesories-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
 .accesories h2 {
   text-transform: uppercase;
 }
@@ -214,6 +235,11 @@ nav a:hover {
 .accesories h3 {
   text-align: center;
   font-weight: bold;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 .faq {
@@ -289,7 +315,13 @@ li span {
 }
 
 .owners-grid {
-  display: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.question-grid {
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 .faq img {
@@ -310,7 +342,20 @@ li span {
 }
 
 .logo-small {
-  min-width: 20%;
+  min-width: 15%;
+  margin-right: 1em;
+}
+
+.badges {
+  display: flex;
+  align-items: center;
+  padding-bottom: .5em;
+  flex-wrap: wrap;
+  gap: 1.5em;
+}
+
+.badges img {
+  min-width: 30%;
 }
 
 .contact-details{
@@ -342,7 +387,7 @@ footer {
   margin-right: 1em;
 }
 
-@media only screen and (min-width: 500px) and (max-width: 1100px){
+@media only screen and (min-width: 500px){
 
 nav a {
   font-size: 1em;
@@ -350,47 +395,52 @@ nav a {
 
 .banner h2 {
   font-size: 2em;
+  margin: 0;
+  padding: 0;
 }
 
 .about-flex {
-  display: flex;
+  flex-direction: row;
   align-items: center;
 }
 
-.about-flex img {
-  width: 250%;
-  margin-left: 1em;
+.about-set-div {
+  min-width: 50%;
+  margin-left: 2em;
 }
 
 .new-product-section {
-  display: flex;
+  flex-direction: row;
   align-items: center;
 }
 
-.new-product-section img {
-  width: 250%;
-  margin-right: 1em;
+.new-product-image {
+  min-width: 50%;
+  margin-right: 2em;
 }
 
 .key-ingredients {
-  display: flex;
+  flex-direction: row;
   align-items: center;
 }
 
+.ingredient-images {
+  margin-left: 2em;
+  min-width: 50%;
+}
+
 .product-grid {
-  display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1em;
 }
 
 .accesories-grid {
-  display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1em;
 }
 
 .owners-grid {
-  display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
@@ -404,12 +454,14 @@ nav a {
   margin: 20px 80px;
 }
 
-.badges {
-  display: flex;
-  justify-content: space-around;
-  align-content: center;
+.badges img {
+  min-width: 30%;
   padding: .4em;
-  max-width: 2000px;
+}
+
+.badges {
+  flex-wrap: nowrap;
+  align-items: center;
 }
 
 .key-ingredient p {
@@ -418,6 +470,15 @@ nav a {
 
 nav a {
   padding: 1em;
+}
+
+.question-grid {
+  grid-template-columns: 1fr;
+}
+
+.logo-small {
+  min-width: 20%;
+  margin-right: 1em;
 }
 
 .logo {
@@ -440,36 +501,34 @@ nav a {
 }
 
 .about-flex {
-  display: flex;
-  align-items: center;
+  flex-direction: row;
 }
 
-.about-flex img {
-  width: 250%;
+.about-set-div {
+  max-width: 50%;
   margin-left: 1em;
 }
 
 .new-product-section {
-  display: flex;
   align-items: center;
+  flex-direction: row;
 }
 
-.new-product-section img {
-  width: 100%;
-  margin-right: 1em;
+.new-product-image {
+  min-width: 50%;
+  margin-right: 2em;
 }
 
 .key-ingredients {
-  display: flex;
-  align-items: center;
+  flex-direction: row;
 }
 
-.key-ingredients img {
-  margin-left: 1em;
+.ingredient-images {
+  margin-left: 3em;
+  min-width: 50%;
 }
 
 .question-grid {
-  display: grid;
   grid-template-columns: 1fr 1fr
 }
 
@@ -477,7 +536,6 @@ nav a {
   margin: 0;
   padding: 0;
   font-size: 2em;
-  }
 }
 
 .banner h1 {
@@ -489,19 +547,17 @@ nav a {
 }
 
 .product-grid {
-  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 1em;
+  gap: 2em;
 }
 
 .accesories-grid {
-  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 1em;
+  gap: 2em;
 }
 
 .owners-grid {
-  display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
@@ -515,11 +571,15 @@ nav a {
   margin: 20px 80px;
 }
 
+.logo-small {
+  max-width: 70%;
+  margin-right: 1em;
+}
+
 .badges {
-  display: flex;
-  justify-content: space-around;
-  align-content: center;
   padding: .4em;
   max-width: 2000px;
+  flex-wrap: nowrap;
+  align-items: center;
 }
 }
